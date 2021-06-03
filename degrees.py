@@ -92,58 +92,7 @@ def shortest_path(source, target):
     that connect the source to the target.
 
     If no possible path, returns None.
-    """
-
-    # num_explored = 0
-    # start_node = Node(state=source, parent=None, action=None)
-    # frontier = QueueFrontier()
-    # frontier.add(start_node)
-
-    # explored = set()
-
-    # solution = []
-
-    # while True:
-    #     # print(frontier)
-
-    #     if frontier.empty():
-    #         raise Exception("No Solution")
-        
-    #     node = frontier.remove()
-    #     # print(node.state, target)
-
-    #     if node.state == target:
-    #         actions = []
-    #         cells = []
-    #         while node.parent is not None:
-    #             actions.append(node.action)
-    #             cells.append(node.state)
-    #             node = node.parent
-    #         actions.reverse()
-    #         cells.reverse()
-    #         # print(actions)
-    #         # print(cells)
-    #         if len(actions) == len(cells):
-    #             for i in range(len(actions)):
-    #                 solution.append((actions[i], cells[i]))
-    #         # movie_id = next(iter(people[source]["movies"]))
-    #         # person_id = target
-    #         # solution.append((movie_id, person_id))
-    #         return solution
-        
-    #     explored.add(node.state)
-    #     num_explored += 1
-
-    #     # print(neighbors_for_person(node.state))
-
-    #     for movie, person in neighbors_for_person(node.state):
-    #         # if not frontier.contains_state(node.state) and node.state not in explored:
-    #         # print("Yes")
-    #         child = Node(state=person, parent=node, action=movie)
-    #         frontier.add(child)
-
-    # # raise NotImplementedError
-    
+    """    
     
     # Keeps track of how many nodes have been explored
     num_explored = 0
